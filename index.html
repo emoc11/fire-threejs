@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fire</title>
+</head>
+<body>
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			background: black;
+		}
+
+		#fire {
+			width: 100vw;
+			height: 100vh;
+			position: relative;
+		}
+
+		nav {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			background: white;
+			padding: 10px 20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		nav li {
+			cursor: pointer;
+			padding: 0;
+			margin: 0;
+		}
+
+		nav li + li {
+			margin-top: 10px;
+		}
+		.fire_exemple {
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+	</style>
+
+	<!-- <img class="fire_exemple" src="img/fire_test.png" alt=""/> -->
+	<div id="fire"></div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
